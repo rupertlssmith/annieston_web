@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition template="template.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html">
+    <ui:define name="page_title">annieston meadow - diary</ui:define>
+    <ui:define name="main_content">
+        <div id="main-container">
+            <div id="main-content" class="light">
+
+                <div class="section-tag"><span>Admin Settings</span></div>
+                <h3>Lughnasadh 2013</h3>
+
+                <h:form>
+                    <p/><table>
+                    <tr>
+                        <td class="inputprompt">Total Raised</td>
+                        <td>£</td>
+                        <td><h:inputText id="amount" value="#{fundsRaised.value}"/></td>
+                    </tr>
+                    <tr>
+                        <td class="inputprompt">Target</td>
+                        <td>£</td>
+                        <td><h:inputText id="target" value="#{fundsRaised.target}"/></td>
+                    </tr>
+                    <tr>
+                        <td><h:commandButton value="Save"/></td>
+                    </tr>
+                </table>
+                </h:form>
+
+            </div>
+        </div>
+    </ui:define>
+</ui:composition>

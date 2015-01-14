@@ -1,0 +1,112 @@
+body { font-size:90%; background: black; }
+a.menu { text-decoration:none; color:#000; outline:0 }
+ul { float:left; width:110px }
+img { display:block }
+
+/* Foreground colors. */
+.white { color:#fff }
+.grey { color:#999 }
+
+/* Background colors. */
+.shaded { background:#000; opacity:0.65 }
+.light { background:#fff; }
+.dark { background:#000; }
+
+/* Fonts. */
+.bold { font-weight:bold }
+
+/* Alignment pairs for lining up prompts to the right and input boxes to the left for neater forms. */
+.inputprompt { text-align: right; font-weight: bold }
+.inputvalue { text-align: left }
+
+/* For images inlined in text. */
+.inline-image { float: left; margin-right: 10px }
+
+/* Box Model. */
+.box-tl { background: url(../../images/top-left.png) scroll no-repeat top left; height: 10px; border: 0px; }
+.box-tr { background: url(../../images/top-right.png) scroll no-repeat top right; height: 10px; border: 0px; }
+.box-bl { background: url(../../images/bottom-left.png) scroll no-repeat top left; height: 10px; border: 0px; }
+.box-br { background: url(../../images/bottom-right.png) scroll no-repeat top right; height: 10px; border: 0px; }
+.box-bar { height: 10px; margin-left:9px; margin-right:9px; border: 0px; }
+.box-bar-right { height: 10px; margin-left:10px; margin-right:0px; border: 0px; }
+.box-bar-left { height: 10px; margin-left:0px; margin-right:10px; border: 0px; }
+.box-back { margin-top:-10px; }
+
+/* Positioning. */
+#page-background { position:fixed; top:10px; left:0; right:0px; bottom:10px; }
+#main-image { height: 100%; width: 100%; }
+#bottom-fade { width: 100%; height: 200px; z-index: 90; position: fixed; left: 0px; bottom: 0px; background: url(../../images/bottom_fade.png) bottom center; }
+
+
+#title { position:fixed; bottom:20px; left:0px; height:100px; width:154px; z-index: 99 }
+#title-content  { height: 80px; margin: 0px; border: 0px; text-align: right; }
+#title-content div { padding: 40px 0px 0px 0px; }
+#title-content span { white-space:nowrap; padding: 0px 22px 0px 8px; font-size: 14px }
+
+#menu { position:fixed; bottom:20px; left:160px; right:0px; height:100px; z-index: 99 }
+#menu-content { height: 80px; margin: 0px; padding: 0px; border: 0px }
+
+#main-container { position:absolute; top:100px; right:180px; width:450px; z-index:70 }
+#main-container-multi-column { position:absolute; top:100px; left:290px; width:945px; margin: 0px 0px 0px 0px; z-index:70; }
+
+#main-content { padding: 10px;  margin: 0px 0px 12em 0px }
+#main-content-fullwidth { overflow: hidden; margin: 0px 0px 10px 0px; padding: 10px; }
+#main-content-column-1 { float: left; clear:both; width: 450px; padding: 10px;  margin: 0px 0px 12em 0px }
+#main-content-column-2 { float: right; width: 450px; padding: 10px; margin: 0px 0px 12em 0px }
+
+#menu-content a:hover { color:#fff }
+
+.section-tag {
+    text-align: right;
+    margin-left: -200px;
+    margin-right: 450px
+}
+
+.section-tag-fullwidth {
+    text-align: right;
+    margin-left: -200px;
+    margin-right: 945px
+}
+
+.section-tag span {
+    color:#fff; 
+    background: #000;
+    white-space:nowrap;
+    padding: 6px 8px 6px 6px;
+}
+
+.section-tag-fullwidth span {
+    color:#fff; 
+    background: #000;
+    white-space:nowrap;
+    padding: 6px 8px 6px 6px;
+}
+
+h2 { font-size: 18px }
+h3 { border-bottom: 1px solid #ccc; margin-top: -20px; padding: 5px 0px 5px 0px }
+h3.no-section-tag { border-bottom: 1px solid #ccc; margin-top: 0px; padding: 5px 0px 5px 0px }
+
+.meter-wrap{
+    position: relative;
+}
+
+/* Progress Meter. */
+.meter-wrap, .meter-value, .meter-text 
+{
+    width: 320px; 
+    height: 30px;
+}
+
+.meter-wrap, .meter-value 
+{
+    background: #bdbdbd url('../../images/meter-outline.png') top left no-repeat;
+}
+
+.meter-text 
+{
+    position: absolute;
+    top:0; left:0;
+    padding-top: 5px;
+    text-align: center;
+    width: 100%;
+}

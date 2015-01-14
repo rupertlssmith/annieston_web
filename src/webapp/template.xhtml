@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+  <head jsfc="h:head">
+    <title><ui:insert name="page_title"/></title>
+    <!-- <link rel="stylesheet" href="debug.css" type="text/css"/> -->
+    <link jsfc="outputStylesheet" rel="stylesheet" href="resources/css/annieston.css" name="annieston.css" library="css"/>
+  </head>
+  <body jsfc="h:body">
+
+    <div id="title">
+      <div class="dark box-tr"></div>
+      <div class="dark box-bar-left box-back"></div>
+
+      <div id="title-content" class="dark">
+        <div><span><a class="white" href="index.jsf"><b>annieston</b> meadow</a></span></div>
+      </div>
+
+      <div class="dark box-br"></div>
+      <div class="dark box-bar-left box-back"></div>
+    </div>
+
+    <div id="menu">
+      <div class="shaded box-tl"></div>
+      <div class="shaded box-bar-right box-back"></div>
+
+      <div id="menu-content" class="shaded">
+        <ul>
+          <li><a class="bold grey" href="index.jsf">diary</a></li>
+          <li><a class="bold grey" href="location.jsf">location</a></li>
+          <li><a class="bold grey" href="about.jsf">about</a></li>
+        </ul>
+      </div>
+
+      <div class="shaded box-bl"></div>
+      <div class="shaded box-bar-right box-back"></div>
+    </div>
+
+    <ui:insert name="main_content"/>
+
+    <div id="page-background">
+      <img id="main-image" src="land_photos/image.jpg" alt=""/>
+    </div>
+    <div id="bottom-fade"></div>
+  </body>
+</html>
