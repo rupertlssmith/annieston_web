@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar webapp-runner.jar annieston-web-1.0.war
+web:    java $JAVA_OPTS -jar target/dependency/jetty-runner.jar --port $PORT target/*.war
