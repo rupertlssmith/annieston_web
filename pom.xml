@@ -71,8 +71,11 @@
             <id>bundle-myfaces</id>
             <activation>
                 <property>
+                    <name>!bundle-myfaces</name>
+                    <!--
                     <name>jsf</name>
                     <value>myfaces</value>
+                    -->
                 </property>
             </activation>
             <!-- Include MyFaces jars into the war -->
