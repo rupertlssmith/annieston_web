@@ -19,6 +19,8 @@ img { display:block }
 .inputprompt { text-align: right; font-weight: bold }
 .inputvalue { text-align: left }
 
+.nowrap { white-space:nowrap; }
+
 /* For images inlined in text. */
 .inline-image { float: left; margin-right: 10px }
 
