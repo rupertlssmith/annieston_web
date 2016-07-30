@@ -1,0 +1,5 @@
+#!/bin/sh
+
+docker build -t rupertlssmith/jessie_annieston:v1 .
+docker rm -f annieston
+docker run -d --name annieston -p 8080:8080 rupertlssmith/jessie_annieston:v1
